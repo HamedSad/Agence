@@ -16,6 +16,7 @@ h2{
 }
 #logo img{
   width:2.3em;
+  height:2.3em;
 }
 #logo{
   display :flex;
