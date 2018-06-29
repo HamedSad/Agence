@@ -1,5 +1,5 @@
 .carousel-inner{
-    height: 40em;
+    height: 30em;
     border: solid black;
     padding-bottom: 5em;
 }
@@ -22,15 +22,15 @@ h2{
 }
 
 h3{
-    font-size: 15px;
+    font-size: 16px;
 }
 
 h4{
-    font-size: 10px;
+    font-size: 13px;
 }
 
 h5{
-    font-size:10px;
+    font-size:12px;
 }
 
 #logo img{
@@ -42,22 +42,14 @@ h5{
   justify-content : space-around;
   padding-top:2em;
 }
-#intitules{
-  display :flex;
-  justify-content : space-around;
-  padding-bottom:6em;
-}
+
 #container{
   background-color: white;
-  height:300px;
 }
 #wrapp{
   height : 30em;
 }
-#liste{
-  display :flex;
-  justify-content : space-around;
-}
+
 hr{
   height:1.5px;
   width:40%;
@@ -76,55 +68,6 @@ width: 100%;
 background-color :#424558;
 }
 
-nav > ul {
-margin: 0px;
-padding: 0px;
-
-}
-nav > ul > li{
-float: right;
-position: relative;
-  
-}
-nav li{
-list-style-type: none;
-}
-.europe{
-  padding-right:2em;
-}
-.asie{
- padding-right:2em; 
-}
-.afrique{
-  padding-right:2em;
-}
-.amerique{
-  padding-right:2em;
-}
-li ul li p{
-  font-size: 20px;
-  
-}
-
-.submenu{
-  display: none;
-  border:1px solid black;
-  background-color: blue;
-  width: 10em;
-  opacity:0.7;
-  text-align: center;
-}
-
-
-.submenu li{
-  border-bottom : 1px solid #CCC;
-}
-
-.submenu li a {
-  padding: 15px 30px;
-  font-size: 13px;
-  color:#222538;
-}
 /*  Header  */
 
 #header{
@@ -145,39 +88,14 @@ carousel-item{
 }
 
 /*   Boxes  */
-#boxes{
+.boxes{
   padding-top : 10em;
   display :flex;
   justify-content : space-around;
 }
 /*  Element  */
-.element1{
-  background-image : url("https://thumbs.dreamstime.com/b/secteur-de-wall-street-la-nuit-61629097.jpg");
-  background-size : cover;
-  width:20%;
-  height:14em;
-  border-radius :20px;
-  border: 3px solid #ecf3fa;
-  box-shadow : 3px 3px 0px 0px #555;
-}
-.element2{
-  background-image : url("https://horizoncharters.com/wp-content/uploads/2017/12/2ff7df2971ac4979e4fec556bdb44ce8-shark-shark-shark-week.jpg");
-  background-size: cover;
-  border: 3px solid #ecf3fa;
-  width:20%;
-  height:14em;
-  border-radius :20px;
-  box-shadow : 3px 3px 0px 0px #555;
-}
-.element3{
-  Background-image: url("https://thumbs.dreamstime.com/b/%C3%A9quipez-le-repos-dans-un-hamac-sous-les-palmiers-sur-la-plage-avec-la-mer-blanche-de-sable-et-d-azur-73079571.jpg");
-  background-size: cover;
-  border: 3px solid #ecf3fa;
-  border-radius :20px;
-  width:20%;
-  height:14em;
-  box-shadow : 3px 3px 0px 0px #555;
-}
+
+
 /* Tableau  */
 .table {
   display: grid;
@@ -188,28 +106,18 @@ carousel-item{
 nav{
  
   background:white;
-  border:black solid;
 }
 
 /*  Accenture  */
-}
-#accenturetext{ 
-  text-align: left;
-  margin-right:1em;
-}
+
 #accenturelogo img{
   width: 5em;
   height:5em;
   float : right;
 }
 /*  poleemploi  */
-#poleemploi{
-  
-}
-#poleemploitext{
-  text-align: center;
-  margin-right:1em;
-}
+
+
 #poleemploilogo img{
   width: 5em;
   height:5em;
@@ -219,55 +127,52 @@ nav{
 #bnp{
   border: 1px solid black;
 }
-#bnptext{
-  text-align: center;
-  margin-right:1em;
-}
+
 #bnplogo img{
   width: 5em;
   height:5em;
   float : right;
 }
 /*   Partie 3  */
-#partie3{
+.partie3{
+  margin-left: 15vw;
+  margin-right: 15vw;
   margin-top: 6em;
   margin-bottom:6em;
   display :flex;
   justify-content : space-around;
   line-height:5px;
   color: grey;
-  font-size: 10px;
 }
 
 
 
-#destinations ul {
+.destinations ul {
   list-style-type: none;
 }
-#group ul{
+.group ul{
 list-style-type: none;
 }
 
-#liens img{
+.liens img{
   width : 2em;
   height : 2em;
-  padding-top:1em;
   margin-right:1em;
 }
-#newsletter{
+.newsletter{
   line-height: 20px;
 }
 /*  paiement  */
-#paiement{
+.paiement{
   margin-top:3em;
   margin-bottom: 2em;
   padding-bottom:1em;
   color: grey;
 }
-#centrage{
+.centrage{
   display :flex;
   justify-content : space-around;
-  padding-bottom:6em;
+  padding-bottom:3em;
 }
 #partenaire img{
   padding-top:1em;
@@ -275,7 +180,7 @@ list-style-type: none;
   width :5em;
   height:3,5em;
 }
-#paiement {
+.paiement {
   padding-top:1.5em;
 }
 #paiementtextelogo img{
