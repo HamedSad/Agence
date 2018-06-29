@@ -1,3 +1,9 @@
+.carousel-inner{
+    height: 40em;
+    border: solid black;
+    padding-bottom: 5em;
+}
+
 p{
  font-size: 25px;
  font-family:Brush Script MT, Brush Script Std, cursive;
@@ -33,7 +39,7 @@ h2{
   height:300px;
 }
 #wrapp{
-  height : 35em;
+  height : 30em;
 }
 #liste{
   display :flex;
@@ -43,7 +49,6 @@ hr{
   height:1.5px;
   width:40%;
   background:grey;
-  align:center;
   border:0;
   
 }
@@ -125,24 +130,19 @@ nav > ul >::after{
 /*  Header  */
 
 #header{
-  background-image: url("http://www.designbridge.com/wp-content/uploads/2015/04/transavia-identity-7.png");
-  background-size: cover;
-  height:35em; 
-  border: solid  black 1px;
-  margin-bottom : 8em;
+  
 }
 #img header{
   width: 100%;
   background-image: cover;
 }
 /*   Titre  */
-#titre{
-  margin-top: 10em;
-  margin-bottom:10em;
+.titre{
+  border:solid black;
+  margin-top: 20em;
+  
 }
-#titre hr{
-  margin-bottom:2em;
-}
+
 /*   Boxes  */
 #boxes{
   padding-top : 10em;
