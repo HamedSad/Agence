@@ -20,6 +20,19 @@ h2{
   font-family:Brush Script MT, Brush Script Std, cursive;
   color: #b0e0e6;
 }
+
+h3{
+    font-size: 15px;
+}
+
+h4{
+    font-size: 10px;
+}
+
+h5{
+    font-size:10px;
+}
+
 #logo img{
   width:2.3em;
   height:2.3em;
@@ -102,21 +115,6 @@ li ul li p{
   text-align: center;
 }
 
-nav li:hover .submenu{
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  padding: 0px;
-  z-index: 2;
-
-}
-
-nav > ul >::after{
-  content: "";
-  display: block;
-  clear: both;
-}
 
 .submenu li{
   border-bottom : 1px solid #CCC;
@@ -135,6 +133,9 @@ nav > ul >::after{
 #img header{
   width: 100%;
   background-image: cover;
+}
+
+carousel-item{
 }
 /*   Titre  */
 .titre{
@@ -187,7 +188,9 @@ nav > ul >::after{
 nav{
  
   background:white;
+  border:black solid;
 }
+
 /*  Accenture  */
 }
 #accenturetext{ 
@@ -233,17 +236,18 @@ nav{
   justify-content : space-around;
   line-height:5px;
   color: grey;
+  font-size: 10px;
 }
+
+
+
 #destinations ul {
   list-style-type: none;
 }
 #group ul{
 list-style-type: none;
 }
-#footer{
-  text-align:center;
-  color: grey;
-}
+
 #liens img{
   width : 2em;
   height : 2em;
@@ -276,11 +280,11 @@ list-style-type: none;
 }
 #paiementtextelogo img{
   width:5em;
-  height:3.5em;
+  height:4em;
   padding-top:2em;
   padding-right:2em;
 }
-#conseils{
+.conseils{
   text-align:center;
   padding-top:3em;
 }
