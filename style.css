@@ -1,9 +1,12 @@
-
+header{ 
+font-size: 30px;
+}
 .carousel-inner{
-    height: 30em;
+    height: 50em;
     border: solid black;
     padding-bottom: 5em;
 }
+
 
 p{
  font-size: 25px;
@@ -44,48 +47,35 @@ h5{
   padding-top:2em;
 }
 
-#container{
-  background-color: white;
-}
-#wrapp{
-  height : 30em;
-}
 
 hr{
   height:1.5px;
   width:40%;
   background:grey;
   border:0;
+  margin-top:5em;
+  margin-bottom:5em;
   
 }
-/* Navigation  */
-body{
-margin: 0px;
-padding: 0px;
-}
 
-nav{
-width: 100%;
-background-color :#424558;
-}
 
-/*  Header  */
-
-#header{
-  
-}
-#img header{
-  width: 100%;
-  background-image: cover;
-}
-
-carousel-item{
-}
 /*   Titre  */
 .titre{
   border:solid black;
   margin-top: 10em;
   
+}
+
+.offres{
+    text-align: center;
+    padding-top: 3em;
+}
+
+.idees{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 5em;
+    
 }
 
 /*   Boxes  */
@@ -101,49 +91,43 @@ carousel-item{
     padding-top :2em;
 }
 .boxes{
-  padding-top : 10em;
+  padding-top : 5em;
   
+}
+
+.card-img-top{
+    height: 15em;
 }
 /*  Element  */
 
-
-/* Tableau  */
-.table {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  height: 30vh;
-  margin: 5em 0 10em 0;
-}
-nav{
- 
-  background:white;
+.tourdumonde{
+    border:solid black;
+    background-image: url(Auckland_City_Pano.jpg);
+    background-size: cover;
+    height: 40em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
-/*  Accenture  */
-
-#accenturelogo img{
-  width: 5em;
-  height:5em;
-  float : right;
-}
-/*  poleemploi  */
-
-
-#poleemploilogo img{
-  width: 5em;
-  height:5em;
-  float : right;
-}
-/*   BNP   */
-#bnp{
-  border: 1px solid black;
+.billets{
+    background-image: url(tourdumonde2.png);
+    background-size: cover;
+    height: 40em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    
 }
 
-#bnplogo img{
-  width: 5em;
-  height:5em;
-  float : right;
+.formalités{
+    background-image: url(visa-thai.jpeg);
+    background-size: cover;
+    height: 40em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    
 }
+
+
 /*   Partie 3  */
 .partie3{
   margin-left: 15vw;
@@ -203,33 +187,4 @@ list-style-type: none;
 .conseils{
   text-align:center;
   padding-top:3em;
-}
-
-.table {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  height: 35vh;
-  border: black solid;
-}
-
-.entete{
-  grid-column: 1  / span 2; 
-  grid-row: 1;
-  border: black solid;
-}
-.entete2{
-  grid-column: 2  / span 2; 
-  grid-row: 2;
-  border:black solid;
-}
-.entete3{
-  grid-column: 1  / span 2; 
-  grid-row: 3;
-  border:black solid;
-}
-.entete4{
-  border:black solid;
-  grid-column: 3; 
-  grid-row: 3;
-  border:black solid; 
 }
