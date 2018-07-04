@@ -65,11 +65,10 @@ hr{
 
 /*   Titre  */
 
-
-
 .titre{
-  margin-top: 10em;
-  text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
   
 }
 
@@ -81,7 +80,7 @@ hr{
 
 @media screen and (max-width: 800px) {
     .offres{
-        margin-top: 1em;
+        margin-top: 0em;
     }
 }
 
@@ -99,7 +98,7 @@ hr{
 
 @media screen and (max-width: 800px){
     .card-img-top{
-    height: 10em;
+    
     }
 }
 
@@ -111,8 +110,8 @@ hr{
 .card{
     margin-top: 2em;
     margin-right: 1em;
-
 }
+
 
 .card-img-top{
     height: 15em;
@@ -164,7 +163,7 @@ hr{
 .partie3{
   margin-top: 1em;
   margin-bottom: 0;
-  line-height:5px;
+  line-height:3px;
   color: grey;
   display:flex;
   flex-direction: column;
@@ -259,7 +258,9 @@ list-style-type: none;
 
 @media screen and (max-width: 800px) {
 .disapear{
-  display:none;
+    position: absolute;
+    left: -999em;
+    
     }
 }
 
@@ -278,14 +279,27 @@ list-style-type: none;
 @media screen and (max-width: 800px) {
     .row{
         margin-top: 1em;
+        margin-right: 10vw;
+        margin-left: 10vw;
     }
-}
-
-.btn btn-primary{
-    text-align: center;
 }
 
 }
 .card-body{
     text-align: center;
+}
+
+@media screen and (max-width: 800px){
+
+    .row .card.text-center:nth-child(2n+1){
+        position: absolute;
+        left: -999em;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .row .card.text-center:nth-child(1n+1){
+        text-align: center;
+    }  
 }
