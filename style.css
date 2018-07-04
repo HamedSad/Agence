@@ -7,6 +7,8 @@ font-size: 30px;
 
 p{
  font-size: 20px;
+text-align: center;
+    
 }
 li p{
   font-size: 40px;
@@ -14,8 +16,25 @@ li p{
   
 }
 
+h1{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    p{
+        font-size: 15px;
+    }
+}
+
 h3{
     font-size: 16px;
+    text-align: center;
 }
 
 h4{
@@ -32,16 +51,40 @@ hr{
   background:grey;
   border:0;
   margin-top:5em;
-  margin-bottom:5em
+  margin-bottom:5em;
 }
+
+@media screen and (max-width: 800px) {
+    
+hr{
+   margin-top: 1em;
+   margin-bottom: 1em; 
+}
+    }
 
 
 /*   Titre  */
+
+
+
 .titre{
   margin-top: 10em;
   text-align: center;
   
 }
+
+@media screen and (max-width: 800px) {
+    .titre{
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .offres{
+        margin-top: 1em;
+    }
+}
+
 
 .offres{
     text-align: center;
@@ -54,9 +97,21 @@ hr{
     margin-top: 3em;   
 }
 
+@media screen and (max-width: 800px){
+    .card-img-top{
+    height: 10em;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .card{
+    margin-top: 1em;
+    }
+}
 .card{
     margin-top: 2em;
     margin-right: 1em;
+
 }
 
 .card-img-top{
@@ -68,6 +123,12 @@ hr{
     width: 100vw;
     margin-top: 5em;
     margin-bottom: 5em;
+}
+
+@media screen and (max-width: 800px) {
+    .tourdumonde{
+        margin-top: 1em;
+    }
 }
 
 .billets{
@@ -86,6 +147,8 @@ hr{
 
 
 /*   Partie 3  */
+
+
 .partie3{
   margin-left: 15vw;
   margin-right: 15vw;
@@ -99,6 +162,8 @@ hr{
 
 @media screen and (max-width: 800px){
 .partie3{
+  margin-top: 1em;
+  margin-bottom: 0;
   line-height:5px;
   color: grey;
   display:flex;
@@ -107,7 +172,7 @@ hr{
 }  
 div>div{
     
-  padding-top:2em;
+  padding-top:1em;
         
     }
 }
@@ -128,6 +193,16 @@ list-style-type: none;
   line-height: 20px;
 }
 /*  paiement  */
+
+@media screen and (max-width: 800px){
+    
+.paiement{
+ margin-top:1em;
+ margin-bottom: 1em;     
+}
+}
+
+
 .paiement{
   margin-top:3em;
   margin-bottom: 2em;
@@ -144,7 +219,7 @@ list-style-type: none;
 .centrage{
     display: flex;
     flex-direction: column;
-    padding-bottom:1em;
+    padding-bottom:0em;
     text-align: center;
     }            
 }
@@ -153,12 +228,17 @@ list-style-type: none;
   padding-top:1em;
   padding-right:2em;
   width :5em;
-  height:3,5em;
 }
 
 
 .paiement {
-  padding-top:1.5em;
+  padding-top:1em;
+}
+
+@media screen and (max-width: 800px) {
+#paiementtextelogo img{
+    padding-top: 0;
+    }
 }
 
 
@@ -172,9 +252,15 @@ list-style-type: none;
 @media screen and (max-width: 640px) {
 .conseils{
   text-align:center;
-  padding-top:3em;
+  padding-top:1em;
   visibility: hidden;
 }
+}
+
+@media screen and (max-width: 800px) {
+.disapear{
+  display:none;
+    }
 }
 
 .conseils{
@@ -189,6 +275,17 @@ list-style-type: none;
     width : 80vw;
 }
 
+@media screen and (max-width: 800px) {
+    .row{
+        margin-top: 1em;
+    }
+}
+
+.btn btn-primary{
+    text-align: center;
+}
+
+}
 .card-body{
     text-align: center;
 }
