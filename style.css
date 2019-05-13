@@ -1,9 +1,62 @@
 header{ 
 font-size: 30px;
 }
-.carousel-inner{
-    
+
+/* Fenetre modale */
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 80%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    text-align: center;
+    float: right;
+    width: 30%;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover { 
+    background: green; 
+    color: white;
+}
+
 
 p{
  font-size: 20px;
@@ -22,13 +75,13 @@ h1{
 
 @media screen and (max-width: 800px){
     h1{
-        font-size: 20px;
+    font-size: 20px;
     }
 }
 
 @media screen and (max-width: 800px){
     p{
-        font-size: 15px;
+    font-size: 15px;
     }
 }
 
@@ -61,9 +114,20 @@ hr{
    margin-bottom: 1em; 
 }
     }
-
+#dialog{
+    border: red;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width : 100vw;
+    border: red solid;
+}
 
 /*   Titre  */
+
+.auckland img{
+    border-radius: 15px;
+}
 
 .titre{
     margin-top: 3em;
@@ -74,20 +138,14 @@ hr{
 
 @media screen and (max-width: 800px) {
     .titre{
-        margin-top: 1em;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .offres{
-        margin-top: 0em;
+    margin-top: 1em;
     }
 }
 
 
 .offres{
     text-align: center;
-    margin-top: 5em;
+    margin-top: 1em;
 }
 
 .idees{
@@ -96,22 +154,30 @@ hr{
     margin-top: 3em;   
 }
 
-@media screen and (max-width: 800px){
-    .card-img-top{
-    
-    }
-}
 
 @media screen and (max-width: 800px){
     .card{
     margin-top: 1em;
     }
 }
+
 .card{
     margin-top: 2em;
-    margin-right: 1em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
+.row .card:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px grey;
+}
+
+@media screen and (max-width: 700px) {
+.row .card:hover{
+    transform: none;
+    box-shadow: none;
+    }            
+}
 
 .card-img-top{
     height: 15em;
@@ -126,7 +192,7 @@ hr{
 
 @media screen and (max-width: 800px) {
     .tourdumonde{
-        margin-top: 1em;
+    margin-top: 1em;
     }
 }
 
@@ -136,16 +202,14 @@ hr{
     margin-top: 10vh;
 }
 
-.img-responsive{
-    width:100vw;
-    display: block;
-    height: auto;
-}
 
 
 
 
 /*   Partie 3  */
+.tourdumonde img{
+    border-radius: 20px;
+}
 
 
 .partie3{
@@ -159,7 +223,7 @@ hr{
   color: grey;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
 .partie3{
   margin-top: 1em;
   margin-bottom: 0;
@@ -170,17 +234,15 @@ hr{
   text-align: center;
 }  
 div>div{
-    
-  padding-top:1em;
-        
+  padding-top:1em; 
     }
 }
 
 .destinations ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 .group ul{
-list-style-type: none;
+    list-style-type: none;
 }
 
 .liens img{
@@ -198,7 +260,7 @@ list-style-type: none;
 .paiement{
  margin-top:1em;
  margin-bottom: 1em;     
-}
+    }
 }
 
 
@@ -253,14 +315,13 @@ list-style-type: none;
   text-align:center;
   padding-top:1em;
   visibility: hidden;
-}
+    }
 }
 
 @media screen and (max-width: 800px) {
 .disapear{
     position: absolute;
-    left: -999em;
-    
+    left: -999em; 
     }
 }
 
@@ -302,4 +363,63 @@ list-style-type: none;
     .row .card.text-center:nth-child(1n+1){
         text-align: center;
     }  
+}
+
+
+/* Effet flip  */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 350px;
+  border: 1px solid #f1f1f1;    
+  /*  3D effect perspective: 1000px;  */
+}
+
+.flip-card-back h1{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.flip-card-back p{
+    padding-bottom: 20%;
+}
+
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
 }
